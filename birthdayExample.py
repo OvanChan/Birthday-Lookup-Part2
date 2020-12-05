@@ -45,7 +45,7 @@ for elem in birthdayList:
 
 
 # to print a value in the dictionary by giving it a string with the name as the key
-print("Kylee Miller's birthday is: " + birthdayDictionary["Kylee Miller"])
+print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
 
 # to get user input
 name = input("Enter a name:")
