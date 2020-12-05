@@ -47,7 +47,25 @@ for elem in birthdayList:
 # to print a value in the dictionary by giving it a string with the name as the key
 print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
 
-# to get user input
-name = input("Enter a name:")
-print("name = " + name)
-print("birthday = " + birthdayDictionary[name])
+# to get user input as a function
+
+def lookUp():
+    print("name = " + name)
+    print("birthday = " + birthdayDictionary[name]) 
+   
+
+name = input("Enter a name (type q to quit):")
+
+for x in name:
+    if name == "q":
+        print("Quitting program")
+        quit
+        break
+    else:
+        lookUp()
+        name = input("Enter a name (type q to quit):")
+   
+
+
+    
+
