@@ -50,3 +50,4 @@ print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
 # to get user input
 name = input("Enter a name:")
 print("name = " + name)
+print("birthday = " + birthdayDictionary[name])
