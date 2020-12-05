@@ -35,24 +35,28 @@ birthdayDictionary = {}
 for elem in birthdayList:
 
     # fetch name and birthday
-    name = elem["name"]
+    fullName = elem["name"].split()
+    firstName = fullName[0]
+    lastName = fullName[1]
+    name = firstName or lastName
+    # name = elem["name"]
     birthday = elem["birthday"]
 
-    print("name = " + name)
+    print("name = " + firstName + " " + lastName)
     print("birthday = " + birthday)
 
     birthdayDictionary[name] = birthday
 
 
 # to print a value in the dictionary by giving it a string with the name as the key
-print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
+# print("Carlie Miller's birthday is: " + birthdayDictionary["Carlie Miller"])
 
 # to get user input as a function
 
 def lookUp():
     print("name = " + name)
     print("birthday = " + birthdayDictionary[name]) 
-   
+       
 
 name = input("Enter a name (type q to quit):")
 
