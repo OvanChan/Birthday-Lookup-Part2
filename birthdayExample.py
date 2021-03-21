@@ -15,7 +15,7 @@ import json
 #
 
 # relative path
-pathToFile = "./birthday.json"
+pathToFile = "C:/Users/ovanc/OneDrive/Documents/GitHub/Birthday-Lookup-Part2//birthday.json"
 
 
 # try to open a file and throw a error if it is not found
@@ -35,9 +35,9 @@ birthdayDictionary = {}
 for elem in birthdayList:
 
     # fetch name and birthday
-    fullName = elem["name"].split()
-    firstName = fullName[0]
-    lastName = fullName[1]
+    fullNameList = elem["name"].split()
+    firstName = fullNameList[0]
+    lastName = fullNameList[1]
     name = firstName or lastName
     # name = elem["name"]
     birthday = elem["birthday"]
